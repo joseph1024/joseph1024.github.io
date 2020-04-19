@@ -70,6 +70,25 @@
   margin-left: 480px;
 }
 
+
+
+.team{
+  padding-bottom: 30px;
+  margin:0 auto;
+  margin-top: 40px;
+  font-family:Microsoft Yahei;
+  font-size: 30px;
+  width: 80%;
+  height: 880px;
+  margin-bottom: 50px;
+  padding: 50px 80px;
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
 body {
   font-family: "Lato", sans-serif;
 }

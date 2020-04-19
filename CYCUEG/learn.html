@@ -37,6 +37,7 @@ function closeNav() {
 
 <div class="team">
 <h2 style="margin:auto;margin-bottom: 20px;font-family: 微軟正黑體">通識教育</h2>  
+<hr style="margin-bottom: 50px;">
 <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
   <div class="flipper" >
     <div class="front" >
@@ -83,7 +84,7 @@ function closeNav() {
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 't')">天</button>
+  <button class="tablinks" onclick="openCity(event, 't')" id="defaultOpen">天</button>
   <button class="tablinks" onclick="openCity(event, 'l')">人</button>
   <button class="tablinks" onclick="openCity(event, 'w')">物</button>
   <button class="tablinks" onclick="openCity(event, 'm')">我</button>
@@ -319,6 +320,9 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+
+document.getElementById("defaultOpen").click();
 </script>
 
 </body>

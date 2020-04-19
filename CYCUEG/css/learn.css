@@ -49,12 +49,8 @@ font-family:Microsoft Yahei;
 font-size: 30px;
 width: 80%;
 height: 1000px;
-background-color: #BDEDED;
 margin-bottom: 50px;
 padding: 50px 85px 50px 100px;
-border-style: ridge;
-border-width: 20px;
-border-color: #1E6DB8;
 }
 
 .tab {
