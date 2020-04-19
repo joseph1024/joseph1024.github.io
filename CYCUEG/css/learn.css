@@ -93,6 +93,7 @@ border-color: #1E6DB8;
 
 
 .tabcontent {
+  display: none;
   padding-top: 300px;
   border: 0px solid #ccc;
   border-top: none;
