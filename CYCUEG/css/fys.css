@@ -1,0 +1,36 @@
+* { margin: 0; padding: 0; }
+.ul {
+ list-style: none; 
+} 
+
+.nav {
+ width: 750px; 
+ height: 170px; 
+ border: 1px solid red; 
+ margin: 100px auto; 
+ overflow: hidden; 
+} 
+
+.ul {
+ width: 200%; 
+ height: 100%; 
+ animation: picmove 5s linear infinite forwards; 
+} 
+
+@keyframes picmove { 
+	from { 
+		transform: translate(0); 
+		} 
+	to { 
+			transform: translate(-750px); 
+		} 
+} 
+
+.img {
+ width: 250px; 
+ height: 170px; 
+ float: left; 
+} 
+
+.ul:hover { animation-play-state: paused; }
+
