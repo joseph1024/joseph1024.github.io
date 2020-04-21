@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CYCUGE</title>
+<style>
+@import "css/home.css";
+@import "css/box.css";
+</style>
+</head>
+<body>
+
+<div id="mymenu" class="menu">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a class="active" href="index.html"><img src="img/home.jpg" ></a> 
+  <a href="learn.html">通識教育</a>
+  <a href="fys.html">風雅頌</a>
+  <a href="team.html">組員介紹</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer;color:white" onclick="openNav()">&#9776;</span>
+  <span class="title"> Discover&nbsp&nbspCYCUGE</span>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mymenu").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mymenu").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="img/c3.jpg" style="width:100%">
+  <div class="text">通識自主學習</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/t4.jpg" style="width:100%">
+  <div class="text">通識認證</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="img/f1.jpg" style="width:100%">
+  <div class="text">風雅頌</div>
+</div>
+
+
+
+</div>
+<br>
+
+<form>
+<div style="display: none;">
+  <span class="dot" ></span> 
+  <span class="dot" ></span> 
+  <span class="dot" ></span> 
+</div>
+</form>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+<div class="team">
+<h2 style="margin:auto;margin-bottom: 20px;font-family: 微軟正黑體">介紹影片</h2>  <hr> <br><br>
+<iframe width="960" height="570" src="https://www.youtube.com/embed/e6ZFkwsSJjk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="padding-bottom: 30px;"></iframe>
+<img src="img/a1.jpg" width="25%" style="float: right">
+<h2 style="margin:auto;margin-bottom: 20px;font-family: 微軟正黑體">幕後花絮</h2>  <hr> <br> <br>
+<iframe width="960" height="570" src="https://www.youtube.com/embed/sq9t1aje_YQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<img src="img/a2.jpg" width="20%" style="float: right"><br>
+<h2 style="margin:auto;margin-bottom: 20px;font-family: 微軟正黑體;padding-top: 30px;">背景音樂</h2>  <hr> <br>
+  Two Steps From Hell -   Victory<br><br>
+  黃渤 - 正道的光<br><br>
+  吳青峰〈蜂鳥〉Official MV（電視劇【我在北京等你】主題曲<br>
+</div>
+
+</body>
+<footer id="foot" >
+  <br>
+  <div class="foot">Have Questions?<hr width="30%"></div>
+  <div class="foot2"><img src="img/local.jpg">200 Chung Pei Road, Chung Li District,<br> 
+    Taoyuan City, Taiwan 32023, R.O.C.<br><br>
+  <img src="img/tel.jpg">+886-3-265-9999<br><br>
+  <a href="mailto:cycubox@cycu.edu.tw" style="text-decoration:none;color:white"><img src="img/mail.jpg">cycubox@cycu.edu.tw</a><br>
+  </div>
+    <br>
+</footer>
+</html> 

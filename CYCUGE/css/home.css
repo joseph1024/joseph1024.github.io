@@ -1,0 +1,100 @@
+.title{
+  font-family:fantasy;
+  font-size:36px;
+  color:white;
+  padding: 780px;
+}
+
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  color: #f1f1f1;
+}
+
+.menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: black
+}
+
+#foot {
+
+  background-color: black
+}
+
+.foot{
+  font-family:fantasy;
+  font-size:28px;
+  color:white;
+  text-align: center
+}
+
+.foot2{
+  font-family:fantasy;
+  font-size:18px;
+  color:white;
+  text-align: center
+}
+
+.h1{
+  font-family:fantasy;
+  font-size:36px;
+  margin-left: 480px;
+}
+
+
+
+.team{
+  padding-bottom: 30px;
+  margin:0 auto;
+  margin-top: 40px;
+  font-family:Microsoft Yahei;
+  font-size: 30px;
+  width: 80%;
+  height: 2100px;
+  margin-bottom: 50px;
+  padding: 50px 80px;
+}
+
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+@media screen and (max-height: 450px) {
+  .menu {padding-top: 15px;}
+  .menu a {font-size: 18px;}
+
