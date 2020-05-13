@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>黃薪誠個人網站</title>
+<style>
+body {margin:0;}
+
+a {
+    text-decoration:none;
+    color:white
+}
+
+p{
+  -webkit-column-break-after: always;
+}
+
+.gotop{
+    position: fixed;
+    right: 0;
+    top:85%;
+    width:6em;
+    margin-top: 2em;
+}
+
+.title{
+  font-size: 28px;
+  padding-left: 10%;
+  font-family: fantasy;
+}
+
+.logo{
+  margin-left: 25%;
+  width: 50%;
+}
+
+.footer{
+  color: white;
+  font-family: fantasy;
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 100px;
+}
+
+
+.icon-bar {
+  width: 80%;
+  background-color: #555;
+  overflow: auto;
+  margin-left: 10%;
+  margin-bottom: 50px;
+}
+
+.icon-bar a {
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #555;
+}
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 24px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  overflow-y:scroll;height:100%;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+
+
+
+.pic img{
+  transform:scale(1,1);transition:all 1s ease-out;
+}
+
+.pic img:hover{
+  transform:scale(1.2,1.2);
+}
+
+
+
+#container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+    }
+
+    .arrow {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-left: 2px solid orange;
+      border-bottom: 2px solid orange;
+      transform: rotate(135deg);
+      animation: toggle 0.6s alternate infinite;
+      margin-right: 50px;
+    }
+
+    @keyframes toggle {
+      to {
+        transform: translateY(30px) rotate(135deg);
+      }
+    }
+.container2 {
+  position: relative;
+  width: 50%;
+}
+
+.image2 {
+  opacity: 1;
+  display: block;
+  width: 250px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 160px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container2:hover .image2 {
+  opacity: 0.3;
+}
+
+.container2:hover .middle {
+  opacity: 1;
+}
+
+.text2 {
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+</style>
+</head>
+<body>
+<video autoplay muted loop id="myVideo">
+  <source src="img/background.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div class="content">
+
+<div class="gotop">
+ <a href="#top" id="going"><div id="container">
+  <span class="arrow"></span>
+</div>
+</a>
+</div>
+<img class="logo" src="img/logo.png" id="top">
+
+
+
+<div class="icon-bar" >
+  <a href="#sc">學歷背景</a> 
+  <a href="#club">社團經驗</a> 
+  <a href="#goal">目標</a> 
+  <a href="#goal2">自我期許</a>
+  <a href="#life">生活紀錄</a> 
+</div>
+
+
+<div>
+ <p class="title" id="sc">學歷背景<p>
+  <hr width=80%>
+  <table style="margin-left:12%">
+  <tr>
+  <td><img src="img/myself.jpg" width="200px" style=";margin-top:20px;margin-right:50px;"></td>
+  <td>
+  <div class="container2">
+ <img src="img/sc1.jpg" class="image2" style="margin-left:40px;margin-top:20px">
+  <div class="middle">
+  <div class="text2">潛龍國小</div>
+  </div>
+  </div> 
+  </td>
+  <td>  
+  <div class="container2">
+  <img src="img/sc2.jpg" class="image2" style="margin-left:40px;margin-top:20px">
+  <div class="middle">
+  <div class="text2">凌雲國中</div>
+  </div>
+  </div> 
+  </td>
+  <td>
+  <div class="container2">
+  <img src="img/sc3.jpg" class="image2" style="margin-left:40px;margin-top:20px">
+  <div class="middle">
+  <div class="text2">中壢高商</div>
+  </div>
+  </div> 
+  </td>
+  <td>
+  <div class="container2">
+   <img src="img/sc4.jpg" class="image2" style="margin-left:40px;margin-top:20px">
+  <div class="middle">
+  <div class="text2">中原大學</div>
+  </div>
+  </div> 
+  </td>  
+  </tr>
+  </table>
+   
+   
+    
+   
+    
+</div>  
+
+<div >
+ <p class="title" id="club">社團經驗<p>
+  <hr width=80% style="margin-bottom:30px; ">
+<div class="slideshow-container" style="margin-bottom: 50px;" >
+
+<div class="mySlides fade">
+
+  <img src="img/ls2.jpg" style="width:1000px" >
+  <div class="text">迎新活動</div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/ls3.jpg" style="width:1000px">
+  <div class="text">成發海報</div>
+</div>
+
+<div class="mySlides fade">
+
+  <img src="img/ls1.jpg" style="width:1000px">
+  <div class="text">最終成發</div>
+</div>
+
+</div>
+<br>
+
+<div style="display: none;">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); 
+}
+</script>
+
+</div>  
+ 
+<div style="columns: 2;column-gap: 0px;margin-left: 100px;">
+ <div class="title" id="goal">目標</div>
+  <hr width=80% style="margin-bottom:30px;">
+<p style="padding-left: 10%">
+▲增強自己的英文能力<br><br>
+一有空閒的時間就可以拿出來背增加自己的單字量。希望能在畢業前考取多益650分以上<br><br>
+▲暑期打工<br><br>
+藉由暑期打工開始累積社會經驗，盡量尋找跟資訊類有關的工作，順便了解現在業界的需求當作以後發展方向的參考。<br><br>
+▲拓展交友圈，充實自我<br><br>
+積極參與各種研習於講座充實自己。將興趣與生活作結合，為大學生活添上更豐富的色彩
+</p>
+
+ <div class="title" id="goal2"> 自我期許</div>
+  <hr width=70% style="margin-right:20%;margin-bottom: 30px;" >
+  <div style="padding-left: 10%;padding-bottom: 30px;">
+  必須要熟讀自己的專業科目才能在未來工作時時發揮自己的所長使自己在就業後不容易被取代
+  </div>
+
+
+
+ <div class="title">聯絡資訊</div>
+  <hr width=70% style="margin-right:20%;margin-bottom: 30px;">
+  <p style="padding-left: 10%">
+  <img src="img/tel.jpg">0963671612<br><br>
+  <img src="img/local.jpg">桃園市龍潭區干城路179巷25弄21號<br><br>
+  <a href="mailto:joseph083012@gmail.com"><img src="img/mail.jpg">joseph083012@gmail.com<br><br></a>
+  <a href="https://www.facebook.com/profile.php?id=100002773360292"><img src="img/fb.jpg" width="40px" style="margin-right:30px;"></a> 
+  <a href="https://www.instagram.com/cheng_1024/"><img src="img/ig.jpg" width="40px" style="margin-right:30px;"></a> 
+  <a href="https://github.com/joseph1024/joseph1024.github.io"><img src="img/github.png" width="40px" style="margin-right:30px;"></a>
+  </p>
+</div> 
+
+<div class="pic">
+ <p class="title" id="life">生活紀錄<p>
+  <hr width=80%>
+   <img src="img/cola1.jpg" width="20%" style="margin-left:12%;  overflow:hidden;">  
+   <img src="img/cola2.jpg" width="20%" style="margin-left:100px;  overflow:hidden;">  
+   <img src="img/robot.jpg" width="20%" style="margin-left:100px;margin-bottom: 20px;  overflow:hidden;" >
+   <img src="img/db.jpg" width="20%" style="margin-left:12%;  overflow:hidden;">  
+   <img src="img/cycu2.jpg" width="20%" style="margin-left:100px;  overflow:hidden;">  
+   <img src="img/cycu1.jpg" width="20%" style="margin-left:100px;  overflow:hidden;" >    
+   <img src="img/jp1.jpg" width="35%" style="margin-left:30%;margin-top: 50px;  overflow:hidden;">
+</div>  
+
+
+</body>
+<footer class="footer">
+<center>Copyright &nbsp;&nbsp;&nbsp;黃薪誠&nbsp;&nbsp;版權所有</center>
+</footer>
+</div>
+</html> 
