@@ -77,7 +77,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 			var self = this;
 			self.timer = setInterval(function() {
 				self.run();	
-			}, 25);
+			}, 5);
 		},
 		run: function() {
 			var self = this;
@@ -111,7 +111,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 	
 	CircularSkillBar.prototype = {
 		init: function() {
-			this.tick = 25;
+			this.tick = 5;
 			this.progress();
 			
 		},
@@ -140,6 +140,26 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 	
 	document.addEventListener( "DOMContentLoaded", function() {
 		var circularBars = new CircularSkillBar( "#bars .bar" );
-	});
-	
-})();
+	});})
+();
+
+		$(function(){
+			$().timelinr({
+				orientation: 	'vertical',
+				issuesSpeed: 	300,
+				datesSpeed: 	100,
+				arrowKeys: 		'true',
+				startAt:		3
+			})
+		});
+
+$('#projects > li').hover(function(){
+  $(this).siblings().addClass('blur');
+}, function(){
+  $(this).removeClass('clicked').siblings().removeClass('blur');
+  
+});
+
+$('#projects > li').click(function(e){
+  $(this).addClass('clicked');
+});

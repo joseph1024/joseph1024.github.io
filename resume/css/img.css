@@ -1,0 +1,171 @@
+
+*, *:before, *:after {
+  box-sizing: border-box !important;
+}
+
+.profilebox {
+  width: 300px;
+  height: 350px;
+  background: #eee;
+  cursor: pointer;
+  float: left;
+  margin: 30px;
+}
+.profilebox1 {
+  background-position: center center;
+  background-size: cover;
+  perspective: 450px;
+  position: relative;
+}
+.profilebox .SocialIcons {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 15px;
+  transform: rotateY(90deg);
+  transform-origin: left center 0;
+  transition: all 350ms ease;
+}
+.profilebox .SocialIcons a {
+  background: #ffffff none repeat scroll 0 0;
+  font-size: 20px;
+  height: 50px;
+  margin-bottom: 1px;
+  position: relative;
+  text-align: center;
+  width: 50px;
+}
+.profilebox .SocialIcons a i {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.profilebox .SocialIcons a:nth-child(1) {
+}
+.profilebox .SocialIcons a:nth-child(2) {
+}
+.profilebox .SocialIcons a:nth-child(3) {
+}
+.profilebox:hover .SocialIcons {
+  opacity: 1;
+  left: 15px;
+  transform: rotateY(0deg);
+}
+.profilebox .profileInfo {
+  background: #ffffff none repeat scroll 0 0;
+  bottom: 0;
+  height: 50px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 90%;
+  transform: rotatex(90deg);
+  transform-origin: bottom center 0;
+  transition: all 350ms ease;
+  opacity: 0;
+}
+.profilebox .profileInfo h3 {
+  font-size: 20px;
+  margin: 15px 0;
+  text-align: center;
+}
+.profilebox:hover .profileInfo {
+  opacity: 1;
+  bottom: 15px;
+  transform: rotatex(0deg);
+}
+
+.photobox{
+  display: inline-block;
+}
+
+.photobox__previewbox{
+  position: relative;
+  overflow: hidden;
+}
+
+.photobox__preview{
+  display: block;
+  max-width: 100%;
+}
+
+.photobox__previewbox:before{
+  content: "";
+}
+
+.photobox_type3 .photobox__previewbox:before{
+  width: 0;
+  height: 0;
+  padding: 25%;
+  
+  background-color: var(--photoboxOverlay, rgba(0, 0, 0, .8));
+  border-radius: 50%;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+
+  transition: transform var(--photoboxAnimationDuration, .4s) ease;
+  will-change: transform;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.photobox_type3:hover .photobox__previewbox:before{
+  transform: translate(-50%, -50%) scale(4);
+  transition-duration: calc(var(--photoboxAnimationDuration, .4s) * 2);
+}
+
+.photobox_type3 .photobox__label{
+  width: 95%;
+  text-align: center;
+  
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: opacity var(--photoboxAnimationDuration, .4s) ease-out;
+  will-change: opacity;
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+.photobox_type3:hover .photobox__label{
+  transition-duration: calc(var(--photoboxAnimationDuration, .4s) / 2);
+  transition-delay: calc(var(--photoboxAnimationDuration, .4s) / 2);
+  opacity: 1;
+}
+
+.photobox_type3 .photobox__preview{
+  transition: transform var(--photoboxAnimationDuration, .4s) cubic-bezier(0.71, 0.05, 0.29, 0.9);
+  will-change: transform;
+  transform: scale(1);
+}
+
+.photobox_type3:hover .photobox__preview{
+  transform: scale(1.2);
+}
+
+.photobox{
+  color: #fff;
+
+  --photoboxOverlay: rgba(72, 27, 174, .7);
+
+}
+
+@media screen and (max-width: 480px){
+  .photobox{
+    width: 100%;
+  }
+}
+
+a{
+      text-decoration:none;
+      color:black;
+}
+

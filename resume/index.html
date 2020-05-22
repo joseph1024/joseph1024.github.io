@@ -4,243 +4,10 @@
 <meta charset="UTF-8">
 <title>個人履歷</title>
 <style>
-body{
-	background-color: #FFF8E5;
-  font-family: Helvetica, Arial, sans-serif;
-}
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("a.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
-
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
-
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-
-.ml9 {
-  position: relative;
-  font-weight: 200;
-  font-size: 4em;
-}
-
-.ml9 .text-wrapper {
-  position: relative;
-  display: inline-block;
-  padding-top: 0.2em;
-  padding-right: 0.05em;
-  padding-bottom: 0.1em;
-  overflow: hidden;
-}
-
-.ml9 .letter {
-  transform-origin: 50% 100%;
-  display: inline-block;
-  line-height: 1em;
-}
-
-
-.container{
-  width: 50%;
-  margin: 0 auto;
-}
-@keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-webkit-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-moz-keyframes load{
-  from {
-    width: 0%
-  }
-}
-@-o-keyframes load{
-  from {
-    width: 0%
-  }
-}
-
-.bar2{
-  background-color: #EEE;
-  padding: 2px;
-  border-radius: 15px;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #FFF;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-.bar2::before{
-  content:  attr(data-skill);
-  background-color: #f3b0ff;
-  display: inline-block;
-  padding: 5px 0 5px 10px;
-  border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
-}
-
-.bar2.front::before{
-  background-color: #ffcc33;
-}
-.bar2.back::before{
-  background-color: #a6cfe3;
-}
-
-.bar2.learning::before{
-  width: calc(90% - 10px);
-}
-.bar2.basic::before{
-  width: calc(85% - 10px);
-}
-.bar2.intermediate::before{
-  width: calc(75% - 10px);
-}
-.bar2.advanced::before{
-  width: calc(85% - 10px);
-}
-.bar2.expert::before{
-  width: calc(80% - 10px);
-}
-
-#bars {
-  margin: 2em auto;
-  max-width: 960px;
-  overflow: hidden;
-}
-
-.bar {
-  float: left;
-  width: 20%;
-  text-align: center;
-}
-
-.bar h3 {
-  font-size: 1.4em;
-  font-weight: bold;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.bar-circle {
-  display: block;
-  margin: 0.7em auto;
-}
-
-:root {
-  --primary: 0, 0%, 100%;
-  --secondary: 202, 73%, 28%;
-  --c: cubic-bezier(1,.49,.16,.96);
-}
-
-
-.btn {
-  --w: 300px;
-  --h: 45px;
-  position: relative;
-  display: flex;
-  width: var(--w);
-  height: var(--h);
-  border: 1px solid hsl(var(--primary));
-}
-
-div {margin-bottom: 20px;}
-div:last-child {margin-bottom: 0px;}
-
-i {
-  content: '';
-  width: 100%;
-  height: 100%;
-  transition: all .5s var(--c);
-  background: hsl(var(--primary));
-}
-
-i:nth-child(1) {transition-delay: .02s;}
-i:nth-child(2) {transition-delay: .04s;}
-i:nth-child(3) {transition-delay: .06s;}
-i:nth-child(4) {transition-delay: .08s;}
-i:nth-child(5) {transition-delay: .10s;}
-i:nth-child(6) {transition-delay: .12s;}
-i:nth-child(7) {transition-delay: .14s;}
-i:nth-child(8) {transition-delay: .16s;}
-i:nth-child(9) {transition-delay: .18s;}
-i:nth-child(10) {transition-delay: .2s;}
-
-
-.span {
-  position: absolute;
-  width: 100%;  
-  font-size: 14px;
-  font-weight: 800;
-  line-height: var(--h);
-  letter-spacing: 4px;
-  text-align: center;
-  text-transform: uppercase;
-  color: hsl(var(--primary)); 
-  transition: all .4s var(--c);
-  z-index: 100;
-}
-
-
-.style-5 {
-  flex-direction: row;
-}
-
-
-.style-5 i {transform-origin: center left;}
-
-
-.style-5 i {  
-  transform: scaleX(0);
-}
-
-
-.style-5:hover i {
-  transform: scaleX(1);
-}
-
-.btn:hover span {
-  color: hsl(var(--secondary));
-  transition-delay: .4s;
-}
-
+@import "css/title.css";
+@import "css/skillbar.css";
+@import "css/timeline.css";
+@import "css/img.css";
 
 </style>	
 
@@ -262,12 +29,12 @@ i:nth-child(10) {transition-delay: .2s;}
     <table>
       <tr>
         <td> 
-          <a href="https://www.facebook.com/profile.php?id=100002773360292"><img src="img/fb.jpg" width="6%" style="margin-right:30px;margin-left:350px;"></a>
+          <a href="https://www.facebook.com/profile.php?id=100002773360292"><img src="img/fb.jpg" width="6%" style="margin-right:30px;margin-left:300px;"></a>
           <a href="https://www.instagram.com/cheng_1024/"><img src="img/ig.jpg" width="6%" style="margin-right:30px;" ></a>
           <a href="https://github.com/joseph1024/joseph1024.github.io"><img src="img/github.png" width="6%" ></a>  
         </td>
         <td> 
-          <a href="joseph1024.github.io/myself/index.html">   
+          <a href="https://joseph1024.github.io/myself/index.html">   
           <div class="btn style-5" >
           <i></i>
           <i></i>
@@ -290,6 +57,7 @@ i:nth-child(10) {transition-delay: .2s;}
 	</div>
 
   <div id="bars">
+    <h1>專業技能</h1><br><br>
     <div class="bar" data-percent="80">
       <h3>前端設計</h3>
       <canvas class="bar-circle" width="70" height="70"></canvas>
@@ -309,18 +77,74 @@ i:nth-child(10) {transition-delay: .2s;}
     <div class="bar" data-percent="75">
       <h3>英文能力</h3>
       <canvas class="bar-circle" width="70" height="70"></canvas>
+      <br><br>
     </div>
   </div>  
 
 
   <div class="container">
-    <h1>程式技能</h1>
+    <h1>程式技能</h1><br><br>
     <div class="bar2 learning" data-skill="Java">90%</div>
     <div class="bar2 back basic" data-skill="C#">85%</div>
     <div class="bar2 back intermediate" data-skill="JavaScript">75%</div>
     <div class="bar2 front advanced" data-skill="HTML5">85%</div>
     <div class="bar2 front expert" data-skill="CSS">80%</div>
+    <br><br><br>
+  </div>
+   
+  <div class="container">
+  <h1>經歷</h1><br>
+  <ul class="timeline">
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="hexa"></span>
+          <span class="flag">考取多張證照</span>
+          <span class="time-wrapper"><span class="time">高中</span></span>
+        </div>
+        <div class="desc"><img src="img/c1.jpg" width="60%"><img src="img/c3.jpg" width="60%"><img src="img/c2.jpg" width="60%"></div>
+      </div>
+    </li>
 
+
+    <li>
+      <div class="direction-l">
+        <div class="flag-wrapper">
+          <span class="hexa"></span>
+          <span class="flag">企業概論</span>
+          <span class="time-wrapper"><span class="time">大一</span></span>
+        </div>
+        <div class="desc"> <div class="photobox photobox_type3">
+        <div class="photobox__previewbox">
+          <img src="img/cow.jpg" class="photobox__preview" alt="Preview">
+          <span class="photobox__label">牛人賣傘</span>
+        </div>
+      </div></div>
+      </div>
+    </li>
+
+
+    <li>
+      <div class="direction-r">
+        <div class="flag-wrapper">
+          <span class="hexa"></span>
+          <span class="flag">後端網站架設</span>
+          <span class="time-wrapper"><span class="time">大二</span></span>
+        </div>
+        <div class="desc">
+              期末線上購物網站 Make A Dream 販賣抽獎卷
+              <div class="profilebox profilebox1" style="background-image: url('img/final.jpg');">
+                <div class="SocialIcons">
+                    <a href="https://MichelleTseng2.github.io/terminal"><img src="img/github.png" width="80%" style="margin-top: 5px;"></a>
+                </div>
+                <div class="profileInfo">
+                    <a href="https://MichelleTseng2.github.io/terminal"><h3>Make A Dream</h3></a>
+                </div>
+              </div>
+        </div>
+      </div>
+    </li>
+  </ul>
   </div>
 </body>
 </html>
