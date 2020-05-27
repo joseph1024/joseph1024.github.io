@@ -10,7 +10,7 @@ body, html {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("a.jpg");
-  height: 50%;
+  height: 55%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -165,3 +165,5 @@ i:nth-child(10) {transition-delay: .2s;}
   color: hsl(var(--secondary));
   transition-delay: .4s;
 }
+
+
