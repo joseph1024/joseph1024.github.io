@@ -53,13 +53,26 @@
                     <div class="sign-in-htm">   
                         <div class="group">
                             <label for="user" class="label">Username</label>
+                            <table>
+                            <tr>
+                            <td width="350px">
                             <input id="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </td>
+                            </tr>
+                            </table>
                         </div>
                         <div class="group">
                             <label for="user" class="label">Password</label>
-                            <input type="password" class="input" id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
-                            <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" ></i>
-                            <i id="demo_img"  class="fas fa-eye-slash" onclick="hideShowPsw()"></i>
+                            <table>
+                            <tr>
+                            <td width="350px" >
+                            <input type="password" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </td>
+                            <td>
+                            <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" style="font-size:24px;" ></i>
+                            </td>
+                            </tr>
+                            </table>
                         </div>
                         <div class="group">
                             <input type="submit" class="button" value="Sign In">
@@ -110,17 +123,15 @@
 
 
 <script type="text/javascript">
-    // 这里使用最原始的js语法实现，可对应换成jquery语法进行逻辑控制
     var demoImg = document.getElementById("demo_img");
     var demoInput = document.getElementById("demo_input");
-    //隐藏text block，显示password block
     function hideShowPsw(){
         if (demoInput.type == "password") {
             demoInput.type = "text";
-            demo_img.class = "fas fa-eye-slash";
+            demoImg.className = "fas fa-eye-slash"
         }else {
             demoInput.type = "password";
-            demo_img.class = "fa fa-eye ml-2";
+            demoImg.className = "fa fa-eye ml-2"
         }
     }
 </script>
