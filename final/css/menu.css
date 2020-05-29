@@ -16,7 +16,8 @@ main{
 footer{
   background-color: #6D8DB6;
   float: left;
-  width: 1895px;
+  width: 1905px;
+  margin-left: -10px;
 
 }
 
@@ -233,6 +234,30 @@ footer{
   transition-delay: .35s;
 }
 
+.btn2 {    
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+}
+
+.button2 {
+  background-color: rosybrown; 
+  color: black;
+  font-family: monospace; 
+  border: 2px solid rosybrown;
+}
+
+.button2:hover {
+  background-color: #A16F3A;
+  color: white;
+  font-family: monospace; 
+}
+
 
 .btn-group button {
   background-color: #FFCC71; 
@@ -259,6 +284,7 @@ footer{
   background-color: #A16F3A;
   color: white;
 }
+
 
 
 /* From Left */
@@ -467,6 +493,7 @@ a{color:inherit;text-decoration:none}
   position: relative;
   font-weight: 900;
   font-size: 3.3em;
+  margin-top: -30px;
 }
 
 .ml6 .text-wrapper {
@@ -488,7 +515,7 @@ a{color:inherit;text-decoration:none}
 .ml5 {
   position: relative;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 16px;
   color: white;
 }
 
@@ -528,22 +555,175 @@ a{color:inherit;text-decoration:none}
   opacity: 0;
 }
 
-.foot-1{
+.foot-l{
   margin-left: 250px;
-  margin-top: -60px;
+  margin-top: 40px;
   color:white;
   font-size: 18px;
   font-family: monospace;
+  float: left;
+
 }
 
+.foot-m{
+  width: 30%;
+  float: left;
+  margin-top: 60px;
+  margin-left: 130px;
+  text-align: center;
 
-.foot-2{
+}
+
+.foot-r{
+  color:white;
+  font-size: 20px;
+  font-family: monospace;
+  float: right; 
+  margin-top: 10px;
+  font-family: monospace;
+  text-align: center;
+}
+
+.foot-b{
+  width: 45%;
+  margin-left: 540px;
+  margin-top: 50px;
   text-align: center;
   color:white;
-  font-size: 18px;
+  float: left;
 }
 
 
+
+.inputt {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 400px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 50%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;
+  font-weight: bold;
+  font-family: "Montserrat", "Microsoft Yahei";
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+
+.input__field:focus {
+  outline: none;
+}
+
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  font-weight: bold;
+  font-size: 70.25%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+
+.icon {
+  color:rosybrown;
+  font-size: 150%;
+}
+
+
+
+/* input */
+
+.input--haruki {
+  margin: 2em 1em 1em;
+}
+
+.input__field--haruki {
+  padding: 0.4em 0.25em;
+  width: 100%;
+  background: transparent;
+  color: white;
+  font-size: 1.55em;
+}
+
+.input__label--haruki {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+}
+
+.input__label-content--haruki {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before,
+.input__label--haruki::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 4px;
+  background:rosybrown;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before {
+  top: 0;
+}
+
+.input__label--haruki::after {
+  bottom: 0;
+}
+
+.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+  -webkit-transform: translate3d(0, -90%, 0);
+  transform: translate3d(0, -90%, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::before,
+.input--filled .input__label--haruki::before {
+  -webkit-transform: translate3d(0, -0.5em, 0);
+  transform: translate3d(0, -0.5em, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::after,
+.input--filled .input__label--haruki::after {
+  -webkit-transform: translate3d(0, 0.5em, 0);
+  transform: translate3d(0, 0.5em, 0);
+}
 
 
 
@@ -589,6 +769,3 @@ a{color:inherit;text-decoration:none}
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease;
 }
-
-
-
