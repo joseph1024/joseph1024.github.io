@@ -8,7 +8,8 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto;
+  margin-top: 100px;
+  margin-left: 550px;
 }
 
 
@@ -24,7 +25,7 @@ img {vertical-align: middle;}
 
 
 .numbertext {
-  color: #f2f2f2;
+  color: black;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
