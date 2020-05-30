@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Socks</title>
     <style>
+    @import "../css/title.css";
     @import "../css/menu.css";
-    @import "../css/index.css";
     </style>
 </head>
 <body>
@@ -19,9 +19,9 @@
                     <div class="dropdown">
                         <li class="menu__group"><a href="menu.html" class="menu__link" style="padding-left: 155px;padding-right: 155px;">MENU</a>
                             <div class="dropdown-content">
-                                <a href="pro1.html">Champio</a>
-                                <a href="pro2.html">Carhartt</a>
-                                <a href="pro3.html">Reebok</a>
+                                <a href="pro1.html">Champion</a>
+                                <a href="pro2.html">Dickies</a>
+                                <a href="pro3.html">NIKE</a>
                                 <a href="pro4.html">FILA</a>
                                 <a href="pro5.html">Vans</a>
                             </div>
@@ -33,7 +33,7 @@
           </nav>
         </div>
             <div  class="btn from-left" onclick="document.getElementById('sign').style.display='block'" >Sign In/Sign Up</div>
-            <table style="margin-top: 30px;float: left;">
+            <table  style="margin-top:30px;float: left">
                 <tr>
                     <td>
                         <div class="btn-group">
@@ -128,10 +128,32 @@
     
     <!--main start-->
     <main>
+        <table  class="hrtable" >
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center">
+                    MENU
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
 
+        <div class="all" style="margin-left:150px;">
+            <a href="pro1.html"><img src="../img/champion.jpg" width="450px" height="350px" style="margin-top:100px;margin-left:90px;"></a>
+            <a href="pro2.html"><img src="../img/dickies.jpg" width="450px" height="350px" style="margin-top:100px;margin-left:30px;"></a>
+            <a href="pro3.html"><img src="../img/nike.jpg" width="450px" height="350px" style="margin-top:100px;margin-left:30px;"></a>
+        </div>
 
+        <div class="all" style="margin-left:150px;">
+            <a href="pro4.html"><img src="../img/fila.jpg" width="450px" height="350px" style="margin-top:100px;margin-left:350px;"></a>
+            <a href="pro5.html"><img src="../img/vans.jpg" width="450px" height="350px" style="margin-top:100px;margin-left:30px;"></a>
+        </div>
     </main>
-
+    <!--main end-->
 
 
     <!--footer start-->
@@ -142,7 +164,7 @@
                 <span class="letters">Have  Questions?</span>
               </span>
             </h1>
-            <hr  align="left">
+            <hr  align="left"><br>
             <i class="fas fa-map-marker-alt" "></i>&nbsp;200,Chung Pei Rd.,Chung Li,<br>&nbsp;&nbsp;&nbsp;Taiwan 32023, R.O.C.<br><br>
             <i class="fas fa-phone"></i>&nbsp;(03)2659999<br><br>
             <div class="link-2">
@@ -200,7 +222,6 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
-    <script src="../js/slideshow.js"></script>
 
 </body>
 </html>

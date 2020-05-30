@@ -1,6 +1,5 @@
 /*slide show*/
 * {box-sizing: border-box;}
-body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 
@@ -8,7 +7,7 @@ img {vertical-align: middle;}
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 550px;
 }
 
@@ -71,4 +70,43 @@ img {vertical-align: middle;}
 }
 
 
+/*best seller*/
 
+.best{
+  width: 60%;
+  margin-top:30px;
+}
+
+.bestimg{
+  width: 30%;
+  height: 300px;
+  margin-left:20px;
+  margin-top:20px;
+}
+
+
+
+.shopbtn {    
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+}
+
+.spbtn {
+  background-color: #FFCC71; 
+  color: #A16F3A;
+  font-family: monospace; 
+  border: 2px solid #A16F3A;
+  font-weight: bold;
+}
+
+.spbtn:hover {
+  background-color: #A16F3A;
+  color: white;
+  font-family: monospace; 
+}

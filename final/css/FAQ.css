@@ -1,0 +1,53 @@
+
+.chat{
+  width: 76%;
+  margin-left: 220px;
+  margin-top: 50px;
+  font-family: "Montserrat", "Microsoft Yahei";
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #6DB7EF;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #54A6C2;
+  opacity: 0.9;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 100px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+  margin-top: 60px;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}

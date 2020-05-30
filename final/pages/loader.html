@@ -1,23 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Socks</title>
-	<style>
-		@import "../css/loader.css";
-	</style>
+    <meta charset="UTF-8">
+    <title>Socks</title>
+    <style>
+    @import "../css/title.css";
+    @import "../css/index.css";
+    </style>
 </head>
 <body>
-	    <div class="wrapper">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="shadow"></div>
-            <div class="shadow"></div>
-            <div class="shadow"></div>
-            <span>Loading</span>
-            <meta http-equiv="refresh" content="1.5; url=index.html">
+    <!--hearder start -->
+    <header>
+    <img src="../img/logo.png" width="10%" style="float: left;">
+        <div class="page">
+          <nav class="menu">
+            <ul class="menu__list">
+                <li class="menu__group"><a href="index.html" class="menu__link">HOME</a></li>
+                    <div class="dropdown">
+                        <li class="menu__group"><a href="menu.html" class="menu__link" style="padding-left: 155px;padding-right: 155px;">MENU</a>
+                            <div class="dropdown-content">
+                                <a href="pro1.html">Champio</a>
+                                <a href="pro2.html">Dickies</a>
+                                <a href="pro3.html">NIKE</a>
+                                <a href="pro4.html">FILA</a>
+                                <a href="pro5.html">Vans</a>
+                            </div>
+                        </li> 
+                    </div>    
+                <li class="menu__group"><a href="aboutus.html" class="menu__link">ABOUT US</a></li>
+                <li class="menu__group"><a href="FAQ.html" class="menu__link">FAQ</a></li>
+            </ul>
+          </nav>
         </div>
-            
+            <div  class="btn from-left" onclick="document.getElementById('sign').style.display='block'" >Sign In/Sign Up</div>
+            <table  style="margin-top:30px;float: left">
+                <tr>
+                    <td>
+                        <div class="btn-group">
+                            <a href="user.html"><button><i class="fas fa-user"></i> user</button></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="btn-group">
+                            <a href="cart.html"><button><i class="fas fa-shopping-cart"></i></button></a>
+                            <a href="manager.html"><button><i class="far fa-address-book"></i> Manager</button></a>
+                            <a href="loader.html"><button><i class="fas fa-sign-out-alt"></i> Sign Out</button></a>
+                        </div>                    
+                    </td>
+                </tr>       
+            </table>
+        <div id="sign" class="login-wrap" >
+            <div class="login-html">
+                <span onclick="document.getElementById('sign').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>           
+                <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                <div class="login-form">        
+                    <!--Sign in form-->    
+                    <form action="loader.html">
+                        <div class="sign-in-htm">   
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <table>
+                                    <tr>
+                                        <td width="350px">
+                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="group">
+                                <label for="user" class="label">Password</label>
+                                <table>
+                                    <tr>
+                                        <td width="350px" >
+                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                        </td>
+                                        <td>
+                                            <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" style="font-size:24px;" ></i>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Sign In">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <a href="#forgot">Forgot Password?</a>
+                            </div>
+                        </div>
+                    </form>
+                    <!--Sign up form--> 
+                    <form action="loader.html">
+                        <div class="sign-up-htm">
+                            <div class="group">
+                                <label for="user" class="label">Username</label>
+                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Password</label>
+                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Repeat Password</label>
+                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </div>
+                            <div class="group">
+                                <label for="pass" class="label">Email Address</label>
+                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                            </div>
+                            <div class="group">
+                                <input type="submit" class="button" value="Sign Up">
+                            </div>
+                            <div class="hr"></div>
+                            <div class="foot-lnk">
+                                <label for="tab-1">Already Member?</a></label>
+                            </div>
+                        </div>
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--hearder end -->
+    
+    <!--main start-->
+    <main>
+
+        
+
+    </main>
+
+
+
+    <!--footer start-->
+    <footer>
+        <div class="foot-l">
+            <h1 class="ml6">
+              <span class="text-wrapper">
+                <span class="letters">Have  Questions?</span>
+              </span>
+            </h1>
+            <hr  align="left"><br>
+            <i class="fas fa-map-marker-alt" "></i>&nbsp;200,Chung Pei Rd.,Chung Li,<br>&nbsp;&nbsp;&nbsp;Taiwan 32023, R.O.C.<br><br>
+            <i class="fas fa-phone"></i>&nbsp;(03)2659999<br><br>
+            <div class="link-2">
+            <a href="mailto:cycubox@cycu.edu.tw" ><i class="fas fa-envelope"></i>&nbsp;cycubox@cycu.edu.tw</a>
+            </div>
+        </div>
+        <div class="foot-m">
+            <table  width="60%" style="margin-left: 100px;" >
+                <tr>
+                    <td>
+                        <img src="../img/k.jpg" width="60%">
+                    </td>
+                    <td>
+                        <img src="../img/k.jpg" width="60%">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="../img/k.jpg" width="60%">
+                    </td>
+                    <td>
+                        <img src="../img/k.jpg" width="60%">
+                    </td>
+                </tr>
+            </table>
+        </div> 
+        <div class="foot-r">
+            <!--board from-->
+            <form action="loader.html">
+            <span class="inputt input--haruki">
+            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" />
+            <label class="input__label input__label--haruki" for="input-1">
+            <span class="input__label-content input__label-content--haruki">Contact Us</span>
+            </label>
+            </span> <br><br>
+            <input class="btn2 button2" type="submit" value="Submit"> <br><br>
+            您是第1位訪客
+            </form>
+        </div>    
+        <div class="foot-b">
+            <h1 class="ml5">
+              <span class="text-wrapper">
+                <span class="line line1" style="margin-bottom:20px;"></span>
+                <span class="letters letters-left">Copyright © 2020 All rights  </span>
+                <span class="letters ampersand">|</span>
+                <span class="letters letters-right">This website is made by Socks</span>
+                <span class="line line2" style="margin-top:20px;"></span>
+              </span>
+            </h1>
+        </div>
+    </footer>
+    <!--footer end-->
+
+    <!--java script-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="../js/sign.js" ></script>
+    <script src="../js/letters.js"></script>
+    <script src="../js/slideshow.js"></script>
+
 </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Socks</title>
     <style>
-    @import "../css/menu.css";
-    @import "../css/index.css";
+    @import "../css/title.css";
+    @import "../css/product.css";
     </style>
 </head>
 <body>
@@ -19,9 +19,9 @@
                     <div class="dropdown">
                         <li class="menu__group"><a href="menu.html" class="menu__link" style="padding-left: 155px;padding-right: 155px;">MENU</a>
                             <div class="dropdown-content">
-                                <a href="pro1.html">Champio</a>
-                                <a href="pro2.html">Carhartt</a>
-                                <a href="pro3.html">Reebok</a>
+                                <a href="pro1.html">Champion</a>
+                                <a href="pro2.html">Dickies</a>
+                                <a href="pro3.html">NIKE</a>
                                 <a href="pro4.html">FILA</a>
                                 <a href="pro5.html">Vans</a>
                             </div>
@@ -33,7 +33,7 @@
           </nav>
         </div>
             <div  class="btn from-left" onclick="document.getElementById('sign').style.display='block'" >Sign In/Sign Up</div>
-            <table style="margin-top: 30px;float: left;">
+            <table  style="margin-top:30px;float: left">
                 <tr>
                     <td>
                         <div class="btn-group">
@@ -128,10 +128,62 @@
     
     <!--main start-->
     <main>
+        <table  class="hrtable" >
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="10%" align="center">
+                    FILA
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
 
+        <div class="search" style="margin-left: 600px;">
+            <div class="center">
+                <select name="sources" id="sources" class="custom-select sources" placeholder="種類">
+                <option value="profile">長襪</option>
+                <option value="word">短襪</option>
+                </select>
+            </div>
 
+            <div class="center" style="margin-left: 40px;">
+                <select name="sources" id="sources" class="custom-select sources" placeholder="排序">
+                <option value="profile">熱門高→低</option>
+                <option value="word">價錢高→低</option>
+                <option value="hashtag">熱門低→高</option>
+                </select>
+            </div>
+
+            <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    
+            <div class="container"> 
+                <!--search form-->
+                <form>
+                <div class="group">      
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label class="label2">Search</label>       
+                </div> 
+                <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+                </form>
+            </div>         
+        </div>
+
+        <div class="pro" style="margin-left:220px; ">
+            <img src="../img/pro4-1.jpg" class="proimg">
+            <img src="../img/pro4-2.jpg" class="proimg">
+            <img src="../img/pro4-3.jpg" class="proimg">
+            <img src="../img/pro4-4.jpg" class="proimg">
+            <img src="../img/pro4-5.jpg" class="proimg">
+            <img src="../img/pro4-6.jpg" class="proimg">
+        </div>
     </main>
-
+    <!--main end-->
 
 
     <!--footer start-->
@@ -142,7 +194,7 @@
                 <span class="letters">Have  Questions?</span>
               </span>
             </h1>
-            <hr  align="left">
+            <hr  align="left"><br>
             <i class="fas fa-map-marker-alt" "></i>&nbsp;200,Chung Pei Rd.,Chung Li,<br>&nbsp;&nbsp;&nbsp;Taiwan 32023, R.O.C.<br><br>
             <i class="fas fa-phone"></i>&nbsp;(03)2659999<br><br>
             <div class="link-2">
@@ -169,7 +221,7 @@
                 </tr>
             </table>
         </div> 
-        <div class="foot-r">
+        <div class="foot-r" style="margin-top:40px;">
             <!--board from-->
             <form action="loader.html">
             <span class="inputt input--haruki">
@@ -200,7 +252,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
-    <script src="../js/slideshow.js"></script>
+    <script src="../js/select.js"></script>
 
 </body>
 </html>
