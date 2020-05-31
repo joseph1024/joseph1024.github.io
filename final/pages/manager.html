@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Socks</title>
     <style>
-    @import "../css/menu.css";
-    @import "../css/index.css";
+    @import "../css/title.css";
+    @import "../css/manager.css";
     </style>
 </head>
 <body>
@@ -65,7 +65,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px">
-                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                     </tr>
                                 </table>
@@ -75,7 +75,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px" >
-                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                         <td>
                                             <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" style="font-size:24px;" ></i>
@@ -97,19 +97,19 @@
                         <div class="sign-up-htm">
                             <div class="group">
                                 <label for="user" class="label">Username</label>
-                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Password</label>
-                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Repeat Password</label>
-                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Email Address</label>
-                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <input type="submit" class="button" value="Sign Up">
@@ -129,8 +129,204 @@
     <!--main start-->
     <main>
 
-        
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    會員管理
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
 
+        <div class="member" >
+            <div class="custom-select" style="">
+                <select >
+                    <option value="0">會員管理</option>
+                    <option value="1">test</option>
+                    <option value="2">test2</option>
+                    <option value="3">test3</option>
+                </select>
+            </div>
+            <button class="memberbtn">管理會員</button>
+            <div class="memberin">
+                會員帳號:test<br><br>
+                會員密碼:123<br><br>
+                累計消費:2000<br><br>
+                紅利點數:2000
+            </div>
+        </div>
+
+
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    商品管理
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="list">
+            <form action="loader.html">
+                <table  class="carttable">
+                    <thead>
+                        <tr >
+                            <th scope="col" height="80px">編號</th>
+                            <th scope="col">名稱</th>
+                            <th scope="col">價格</th>
+                            <th scope="col">庫存</th>
+                            <th scope="col">圖片位置</th>
+                            <th scope="col">分類</th>
+                            <th scope="col">修改</th>
+                            <th scope="col">刪除</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" height="110px">1</th>
+                            <td width="25%"><input type="text" value="Champion 白色長襪" class="text"></td>
+                            <td width="12%"><input type="text"  value="$200" class="text" style="width: 100px;"></td>
+                            <td width="12%"><input type="text" value="100" class="text" style="width: 100px;"></td>
+                            <td width="20%"><input type="text" value="../img/pro1-1.jpg" class="text" style="width: 210px;"> </td>
+                            <td width="15%"><input type="text" value="Champion" class="text" style="width: 150px;"></td>
+                            <td><button tyle="submit" class="memberbtn"><i class="fas fa-wrench"></i></button></td>
+                            <td><button tyle="submit" class="memberbtn"><i class="fas fa-trash" ></i></button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row" height="110px">2</th>
+                            <td width="25%"><input type="text" value="Champion 黑色長襪" class="text"></td>
+                            <td width="12%"><input type="text"  value="$200" class="text" style="width: 100px;"></td>
+                            <td width="12%"><input type="text" value="100" class="text" style="width: 100px;"></td>
+                            <td width="20%"><input type="text" value="../img/pro1-2.jpg" class="text" style="width: 210px;"> </td>
+                            <td width="15%"><input type="text" value="Champion" class="text" style="width: 150px;"></td>
+                            <td><button tyle="submit" class="memberbtn"><i class="fas fa-wrench"></i></button></td>
+                            <td><button tyle="submit" class="memberbtn"><i class="fas fa-trash" ></i></button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    出貨記錄
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="list">
+            <table  class="carttable">
+                <thead>
+                    <tr >
+                        <th scope="col" height="80px">編號</th>
+                        <th scope="col">訂購人</th>
+                        <th scope="col">商品名稱</th>
+                        <th scope="col">購買數量</th>
+                        <th scope="col">購買時間</th>
+                        <th scope="col">地址</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" height="110px">1</th>
+                        <td width="10%">test</td>
+                        <td width="25%">Champion 白色長襪</td>
+                        <td width="12%">1</td>
+                        <td width="20%">2020-05-31 00:12:45</td>
+                        <td width="25%">龍潭</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    兌獎記錄
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+
+        <div class="list">
+            <table  class="carttable">
+                <thead>
+                    <tr >
+                        <th scope="col" height="80px">編號</th>
+                        <th scope="col">兌獎人</th>
+                        <th scope="col">商品名稱</th>
+                        <th scope="col">兌換數量</th>
+                        <th scope="col">購買時間</th>
+                        <th scope="col">地址</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" height="110px">1</th>
+                        <td width="10%">test</td>
+                        <td width="25%">Champion 白色長襪</td>
+                        <td width="12%">1</td>
+                        <td width="20%">2020-05-31 00:12:45</td>
+                        <td width="25%">龍潭</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    留言板
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="board">
+            <div class="boardtxt">
+                姓名:test<br><br>
+                留言時間:2020-05-31 00:12:45<br><br>
+                留言:hi
+                <hr class="hrline" width="800px" style="margin-left:-10px;">
+                姓名:test2<br><br>
+                留言時間:2020-05-31 00:12:45<br><br>
+                留言:你好
+                <hr class="hrline" width="800px" style="margin-left:-10px;">                
+                姓名:test3<br><br>
+                留言時間:2020-05-31 00:12:45<br><br>
+                留言:哈囉
+                <hr class="hrline" width="800px" style="margin-left:-10px;">
+            </div>
+        </div>
     </main>
     <!--main end-->
 
@@ -174,7 +370,7 @@
             <!--board from-->
             <form action="loader.html">
             <span class="inputt input--haruki">
-            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" />
+            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" required/>
             <label class="input__label input__label--haruki" for="input-1">
             <span class="input__label-content input__label-content--haruki">Contact Us</span>
             </label>
@@ -201,7 +397,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
-    <script src="../js/slideshow.js"></script>
+    <script src="../js/select.js"></script>
 
 </body>
 </html>

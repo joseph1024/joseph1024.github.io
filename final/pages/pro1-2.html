@@ -5,7 +5,7 @@
     <title>Socks</title>
     <style>
     @import "../css/title.css";
-    @import "../css/product.css";
+    @import "../css/product2.css";
     </style>
 </head>
 <body>
@@ -128,59 +128,87 @@
     
     <!--main start-->
     <main>
-        <table  class="hrtable" >
-            <tr>
-                <td>
-                    <hr class="hrline"> 
-                </td>
-                <td width="10%" align="center">
-                    VANS
-                </td>
-                <td>
-                    <hr class="hrline"> 
-                </td>
-            </tr>
-        </table>
-
-        <div class="search" style="margin-left: 600px;margin-top: 100px;">
-             <div class="choice" >
-                <select size="1" onchange="location = this.value;">
-                <option value="1" disabled selected hidden>種類</option>
-                <option value="pro1.html">全部</option>
-                <option value="pro1.html?type=long">長襪</option>
-                <option value="pro1.html?type=short">短襪</option>
-              </select>
-            </div>
-            <div class="choice" >
-              <select  size="1" onchange="location = this.value;">
-                <option value="1" disabled selected hidden>排序</option>
-                <option value="pro1.html?filter=hotHtoL">熱門高→低</option>
-                <option value="pro1.html?filter=priceHtoL">價錢高→低</option>
-                <option value="pro1.html?filter=priceLtoH">熱門低→高</option>
-              </select>
-            </div>
-    
-            <div class="container"> 
-                <!--search form-->
-                <form>
-                <div class="group">      
-                    <input type="text" name="search" required>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
-                    <label class="label2">Search</label>       
-                </div> 
-                <button type="submit" class="searchbtn"><i class="fas fa-search"></i></button>
+        <div class="pro">
+            <img src="../img/pro1-2.jpg">
+            <div class="intr">
+                <p style=" font-size: 36px;">champion長襪(黑)</p>
+                <p style="color:red;font-size: 24px;">NT$100</p>
+                <p style="font-size: 24px;">庫存:100</p>
+                <!--buy form-->
+                <form action="loader.html">
+                    <p style="font-size: 24px;">購買數量:<input type="number" value="1" min="1" style="font-size: 18px;padding-top:10px;margin-left: 10px;width:50px;height: 30px;;"></p>
+                    <div class="btn-group2" style="margin-top: 80px;">
+                            <button type="submit" style="font-size: 24px;">加入購物車</button>
+                            <button type="submit" style="font-size: 24px;">結帳</button>
+                    </div> 
                 </form>
-            </div>         
+            </div>
+        </div><hr class="hrline" width="70%">
+        
+        <div class="content">
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <!--content form-->
+            <form action="loader.html">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED  />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                <textarea name="memo" cols="20" rows="5" wrap="hard" maxlength="100"   required></textarea>
+                <div class="btn-group3" >
+                    <button type="submit" style="font-size: 24px;">送出留言</button>
+                </div> 
+            </form>
+            <!--content form end-->
         </div>
 
-        <div class="pro" style="margin-left:220px; ">
-            <a href="pro5-1.html"><img src="../img/pro5-1.jpg" class="proimg"></a>
-            <a href="pro5-2.html"><img src="../img/pro5-2.jpg" class="proimg"></a>
-            <a href="pro5-3.html"><img src="../img/pro5-3.jpg" class="proimg"></a>
-            <a href="pro5-4.html"><img src="../img/pro5-4.jpg" class="proimg"></a>
-            <a href="pro5-5.html"><img src="../img/pro5-5.jpg" class="proimg"></a>
-            <a href="pro5-6.html"><img src="../img/pro5-6.jpg" class="proimg"></a>
+        <div class="content" style="overflow-y:scroll; height: 550px;">
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1"  />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                <div class="board">
+                    good
+                </div> 
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <!--content form-->
+            <form>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                 <div class="board">
+                    nice
+                </div> 
+            </form>
+
         </div>
     </main>
     <!--main end-->
@@ -252,6 +280,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
+    <script src="../js/select.js"></script>
 
 </body>
 </html>

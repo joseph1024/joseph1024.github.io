@@ -65,7 +65,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px">
-                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                     </tr>
                                 </table>
@@ -75,7 +75,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px" >
-                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                         <td>
                                             <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" style="font-size:24px;" ></i>
@@ -97,19 +97,19 @@
                         <div class="sign-up-htm">
                             <div class="group">
                                 <label for="user" class="label">Username</label>
-                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Password</label>
-                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Repeat Password</label>
-                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Email Address</label>
-                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <input type="submit" class="button" value="Sign Up">
@@ -131,12 +131,12 @@
         <div class="pro">
             <img src="../img/pro1-1.jpg">
             <div class="intr">
-                <p style=" font-size: 36px;">產品名稱</p>
+                <p style=" font-size: 36px;">Champion長襪(白)</p>
                 <p style="color:red;font-size: 24px;">NT$100</p>
                 <p style="font-size: 24px;">庫存:100</p>
                 <!--buy form-->
                 <form action="loader.html">
-                    <p style="font-size: 24px;">購買數量:<input type="number"  min="1" style="font-size: 18px;padding-top:10px;margin-left: 10px;width:50px;height: 30px;;"></p>
+                    <p style="font-size: 24px;">購買數量:<input type="number" value="1" min="1" style="font-size: 18px;padding-top:10px;margin-left: 10px;width:50px;height: 30px;;"></p>
                     <div class="btn-group2" style="margin-top: 80px;">
                             <button type="submit" style="font-size: 24px;">加入購物車</button>
                             <button type="submit" style="font-size: 24px;">結帳</button>
@@ -149,9 +149,9 @@
             <img src="../img/user.jpg">
             <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
             <!--content form-->
-            <form>
+            <form action="loader.html">
             <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" />
+                <input type="radio" id="star5" name="rate" value="5" CHECKED  />
                 <label for="star5" title="text">5 stars</label>
                 <input type="radio" id="star4" name="rate" value="4" />
                 <label for="star4" title="text">4 stars</label>
@@ -162,9 +162,7 @@
                 <input type="radio" id="star1" name="rate" value="1" />
                 <label for="star1" title="text">1 star</label>
             </div>
-                <div style="">
-                    <textarea name="memo" cols="20" rows="5" wrap="hard" maxlength="100"   required></textarea>
-                </div>
+                <textarea name="memo" cols="20" rows="5" wrap="hard" maxlength="100"   required></textarea>
                 <div class="btn-group3" >
                     <button type="submit" style="font-size: 24px;">送出留言</button>
                 </div> 
@@ -172,6 +170,46 @@
             <!--content form end-->
         </div>
 
+        <div class="content" style="overflow-y:scroll; height: 550px;">
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1"  />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                <div class="board">
+                    good
+                </div> 
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <!--content form-->
+            <form>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                 <div class="board">
+                    nice
+                </div> 
+            </form>
+
+        </div>
     </main>
     <!--main end-->
 
@@ -215,7 +253,7 @@
             <!--board from-->
             <form action="loader.html">
             <span class="inputt input--haruki">
-            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" />
+            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" required/>
             <label class="input__label input__label--haruki" for="input-1">
             <span class="input__label-content input__label-content--haruki">Contact Us</span>
             </label>

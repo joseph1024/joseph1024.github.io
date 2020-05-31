@@ -5,7 +5,7 @@
     <title>Socks</title>
     <style>
     @import "../css/title.css";
-    @import "../css/index.css";
+    @import "../css/cart.css";
     </style>
 </head>
 <body>
@@ -65,7 +65,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px">
-                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input id="user" type="text" name="user" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                     </tr>
                                 </table>
@@ -75,7 +75,7 @@
                                 <table>
                                     <tr>
                                         <td width="350px" >
-                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                            <input type="password" name="pass" class="input"  id="demo_input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                                         </td>
                                         <td>
                                             <i id="demo_img"  class="fa fa-eye ml-2"  onclick="hideShowPsw()" style="font-size:24px;" ></i>
@@ -97,19 +97,19 @@
                         <div class="sign-up-htm">
                             <div class="group">
                                 <label for="user" class="label">Username</label>
-                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="user" name="user" type="text" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Password</label>
-                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="psw" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Repeat Password</label>
-                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="pass2" type="password" class="input" data-type="password" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <label for="pass" class="label">Email Address</label>
-                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))">
+                                <input id="pass" name="email" type="email" class="input" onkeyup="value=value.replace(/[\W]/g,'') " onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))" required>
                             </div>
                             <div class="group">
                                 <input type="submit" class="button" value="Sign Up">
@@ -128,9 +128,94 @@
     
     <!--main start-->
     <main>
+        <div class="cart">
+            <table  class="carttable">
+                <thead>
+                    <tr >
+                        <th scope="col" height="80px">編號</th>
+                        <th scope="col">名稱</th>
+                        <th scope="col">圖片</th>
+                        <th scope="col">金額</th>
+                        <th scope="col">數量</th>
+                        <th scope="col">小計</th>
+                        <th scope="col">刪除</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row" height="110px">1</th>
+                        <td width="20%">Champion 白色長襪</td>
+                        <td style="width: 25%;" >
+                            <img src="../img/pro1-1.jpg" style="width: 25%;">
+                        </td>
+                        <td>$200</td>
+                        <td>1</td>
+                        <td>$200</td>
+                        <td><a href="loader.html"><i class="fas fa-trash" ></i></a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" height="110px">2</th>
+                        <td width="20%">Champion 黑色長襪</td>
+                        <td style="width: 25%;" >
+                            <img src="../img/pro1-2.jpg" style="width: 25%;">
+                        </td>
+                        <td>$200</td>
+                        <td>1</td>
+                        <td>$200</td>
+                        <td><a href="loader.html"><i class="fas fa-trash" ></i></a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="loader.html"><button class="clearbtn">清空購物車</button></a>
+        </div>
 
-        
-
+        <div class="wrapper">
+            <div class="container">
+                <form action="loader.html">
+                     <h1>
+                        <i class="fas fa-shipping-fast"></i>
+                        Shipping Details
+                    </h1>
+                    <div class="name">
+                        <div>
+                            <font color="red">*</font><label for="f-name">姓名</label>
+                            <input type="text" name="f-name" required>
+                        </div>
+                    </div>
+                    <div class="address-info">
+                        <div>
+                            <font color="red">*</font><label for="city">住址</label>
+                            <input type="text" name="city" required>
+                        </div>
+                    </div>
+                    <h1>
+                        <i class="far fa-credit-card"></i> Payment Information
+                    </h1>
+                    <font color="red">*</font>&nbsp;信用卡類型&emsp;:&emsp;
+                    <select>
+                        <option value="Visa">Visa</option>
+                        <option value="Master">Master Card</option>
+                        <option value="JCB">JCB</option>
+                    </select><br><br>
+                    <font color="red">*</font>&nbsp;信用卡號&emsp;:&emsp;
+                    <input type="text" name="" style="width: 40px;" minlength="4" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>4)
+                    value=value.slice(0,4)" placeholder="" required> -
+                    <input type="text" name="" style="width: 40px;" minlength="4" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>4)
+                    value=value.slice(0,4)" placeholder="" required> -
+                    <input type="text" name="" style="width: 40px;" minlength="4" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>4)
+                    value=value.slice(0,4)" placeholder="" required> -
+                    <input type="text" name="" style="width: 40px;" minlength="4" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>4)
+                    value=value.slice(0,4)" placeholder="" required><br><br>
+                    <font color="red">*</font>&nbsp;信用卡有效年月&emsp;:&emsp;
+                    <input type="month" name="" value="" required><br><br>
+                    <font color="red">*</font>&nbsp;信用卡背面末三碼&emsp;:&emsp;
+                    <input type="text" name="" style="width: 30px;" minlength="3" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>3)
+                    value=value.slice(0,3)" placeholder="" required><br><br>
+                    <button  tyle="submit" class="clearbtn2">結帳</button>
+                </form>
+                <a href="menu.html"><button class="clearbtn">繼續購買</button></a>
+            </div>   
+        </div>
     </main>
     <!--main end-->
 
@@ -174,7 +259,7 @@
             <!--board from-->
             <form action="loader.html">
             <span class="inputt input--haruki">
-            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" />
+            <input class="input__field input__field--haruki" tyle="text" name="board" id="input-1" required/>
             <label class="input__label input__label--haruki" for="input-1">
             <span class="input__label-content input__label-content--haruki">Contact Us</span>
             </label>
@@ -201,7 +286,5 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
-    <script src="../js/slideshow.js"></script>
-
 </body>
 </html>
