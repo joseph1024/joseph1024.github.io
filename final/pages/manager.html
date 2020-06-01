@@ -33,7 +33,7 @@
           </nav>
         </div>
             <div  class="btn from-left" onclick="document.getElementById('sign').style.display='block'" >Sign In/Sign Up</div>
-            <table  style="margin-top:30px;float: left">
+            <table  style="margin-top:150px;float: left;position: absolute;">
                 <tr>
                     <td>
                         <div class="btn-group">
@@ -128,7 +128,15 @@
     
     <!--main start-->
     <main>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'member')" id="defaultOpen">會員管理</button>
+        <button class="tablinks" onclick="openCity(event, 'product')">商品管理</button>
+        <button class="tablinks" onclick="openCity(event, 'order')">出貨紀錄</button>
+        <button class="tablinks" onclick="openCity(event, 'gift')">兌換記錄</button>
+        <button class="tablinks" onclick="openCity(event, 'board')">留言板</button>
+    </div>
 
+    <div id="member" class="tabcontent">
         <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
@@ -160,8 +168,9 @@
                 紅利點數:2000
             </div>
         </div>
+    </div>
 
-
+    <div id="product" class="tabcontent">
         <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
@@ -212,12 +221,23 @@
                             <td><button tyle="submit" class="memberbtn"><i class="fas fa-wrench"></i></button></td>
                             <td><button tyle="submit" class="memberbtn"><i class="fas fa-trash" ></i></button></td>
                         </tr>
+                        <tr>
+                            <th scope="row" height="110px">3</th>
+                            <td width="25%"><input type="text" value="" class="text"></td>
+                            <td width="12%"><input type="text"  value="" class="text" style="width: 100px;"></td>
+                            <td width="12%"><input type="text" value="" class="text" style="width: 100px;"></td>
+                            <td width="20%"><input type="text" value="" class="text" style="width: 210px;"> </td>
+                            <td width="15%"><input type="text" value="" class="text" style="width: 150px;"></td>
+                            <td colspan="2"><button tyle="submit" class="memberbtn" style="margin-left: 70px;"><i class="fas fa-plus"></i></button></td>
+                        </tr>
                     </tbody>
                 </table>
             </form>
         </div>
+    </div>
 
-        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+    <div id="order" class="tabcontent">
+    <table id="order" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
@@ -255,8 +275,10 @@
                 </tbody>
             </table>
         </div>
+    </div>
 
-        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+    <div id="gift" class="tabcontent">
+       <table id="gift" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
@@ -295,9 +317,10 @@
                 </tbody>
             </table>
         </div>
+    </div>
 
-
-        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+    <div id="board" class="tabcontent">
+        <table id="board" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
@@ -313,20 +336,21 @@
 
         <div class="board">
             <div class="boardtxt">
-                姓名:test<br><br>
+                編號:1<br><br>
                 留言時間:2020-05-31 00:12:45<br><br>
                 留言:hi
-                <hr class="hrline" width="800px" style="margin-left:-10px;">
-                姓名:test2<br><br>
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
+                編號:2<br><br>
                 留言時間:2020-05-31 00:12:45<br><br>
                 留言:你好
-                <hr class="hrline" width="800px" style="margin-left:-10px;">                
-                姓名:test3<br><br>
+                <hr class="hrline" width="500px" style="margin-left:-10px;">                
+                編號:3<br><br>
                 留言時間:2020-05-31 00:12:45<br><br>
                 留言:哈囉
-                <hr class="hrline" width="800px" style="margin-left:-10px;">
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
             </div>
         </div>
+    </div>
     </main>
     <!--main end-->
 
@@ -398,6 +422,7 @@
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
     <script src="../js/select.js"></script>
+    <script src="../js/tab.js"></script>
 
 </body>
 </html>
