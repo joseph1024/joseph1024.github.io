@@ -5,7 +5,8 @@
     <title>Socks</title>
     <style>
     @import "../css/title.css";
-    @import "../css/index.css";
+    @import "../css/user.css";
+    @import "../css/product2.css";
     </style>
 </head>
 <body>
@@ -33,7 +34,7 @@
           </nav>
         </div>
             <div  class="btn from-left" onclick="document.getElementById('sign').style.display='block'" >Sign In/Sign Up</div>
-            <table  style="margin-top:30px;float: left">
+            <table  style="margin-top:150px;float: left;position: absolute;">
                 <tr>
                     <td>
                         <div class="btn-group">
@@ -128,9 +129,228 @@
     
     <!--main start-->
     <main>
+    <div class="tab2">
+        <button class="tablinks" onclick="openCity(event, 'inf')" id="defaultOpen">個人資料</button>
+        <button class="tablinks" onclick="openCity(event, 'psw')">修改密碼</button>
+        <button class="tablinks" onclick="openCity(event, 'gift')">紅利兌換</button>
+        <button class="tablinks" onclick="openCity(event, 'order')">訂單紀錄</button>
+        <button class="tablinks" onclick="openCity(event, 'board')">留言記錄</button>
+    </div>
 
+    <div id="inf" class="tabcontent">
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    個人資料
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="member" >
+            <div class="memberin">
+                <img src="../img/user.jpg" alt=""><br><br><br><br>
+                <div style="margin-left: 150px;">
+                    會員帳號: test<br><br>
+                    電子信箱: test@gmail.com<br><br>
+                    累計消費: 2000<br><br>
+                    紅利點數: 2000
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="psw" class="tabcontent">
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    修改密碼
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
         
+        <!--update form start-->
+        <form action="loader">
+            <div class="member" >
+                <div class="memberin" >
+                    <img src="../img/user.jpg" alt=""><br><br><br><br>
+                    <div style="margin-left: 100px;">
+                        輸入舊密碼:<input type="text" style="margin-left: 10px;"> <br><br>
+                        輸入新密碼:<input type="text" style="margin-left: 10px;"><br><br>
+                        確認新密碼:<input type="text" style="margin-left: 10px;"><br><br>
+                    </div>
+                    <button type="submit" class="pswbtn">修改密碼</button>   
+                </div>           
+            </div>
+        </form>
+        <!--update form end-->
+    </div>
 
+    <div id="gift" class="tabcontent" style="height: 1100px;" >
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    紅利兌換
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+        
+        <!--member form start-->
+        <form action="loader.html">
+            <div class="member" >
+                <div class="custom-select" style="">
+                    <select >
+                        <option value="0">紅利兌換</option>
+                        <option value="1">gift1</option>
+                        <option value="2">gift2</option>
+                        <option value="3">gift3</option>
+                    </select>
+                </div>
+                <button type="submit" class="memberbtn">兌換獎品</button>
+            </div>
+        </form>
+        <!--member form end-->
+
+         <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    兌換記錄
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="board2">
+            <div class="board2txt">
+                編號:1<br><br>
+                兌換時間:2020-05-31 00:12:45<br><br>
+                兌換商品:gift1
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
+                編號:2<br><br>
+                兌換時間:2020-05-31 00:12:45<br><br>
+                兌換商品:gift2
+                <hr class="hrline" width="500px" style="margin-left:-10px;">                
+                編號:3<br><br>
+                兌換時間:2020-05-31 00:12:45<br><br>
+                兌換商品:gift3
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
+            </div>
+        </div>
+    </div>
+
+    <div id="order" class="tabcontent">
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    訂單記錄
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="board2">
+            <div class="board2txt">
+                編號: 1<br><br>
+                商品名稱: 黑長襪<br><br>
+                購買數量: 1<br><br>
+                購買時間: 2020-05-31 00:12:45<br><br>
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
+                編號: 2<br><br>
+                商品名稱: 白長襪<br><br>
+                購買數量: 12<br><br>
+                購買時間: 2020-05-31 00:12:45<br><br>
+                <hr class="hrline" width="500px" style="margin-left:-10px;">                
+                編號: 3<br><br>
+                商品名稱: 黑短襪<br><br>
+                購買數量: 1<br><br>
+                購買時間: 2020-05-31 00:12:45<br><br>
+                <hr class="hrline" width="500px" style="margin-left:-10px;">
+            </div>
+        </div>
+    </div>
+
+
+    <div id="board" class="tabcontent">
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+            <tr>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+                <td width="15%" align="center" style="font-family:Montserrat, Microsoft Yahei;font-size:28px;">
+                    留言記錄
+                </td>
+                <td>
+                    <hr class="hrline"> 
+                </td>
+            </tr>
+        </table>
+
+        <div class="content" style="overflow-y:scroll; height: 550px;">
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1"  />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                <div class="board" style="width: 400px">
+                    good
+                </div> 
+            <img src="../img/user.jpg">
+            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <!--content form-->
+            <form>
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+            </div>
+                 <div class="board" style="width: 400px">
+                    nice
+                </div> 
+            </form>
+    </div>
     </main>
     <!--main end-->
 
@@ -201,7 +421,8 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="../js/sign.js" ></script>
     <script src="../js/letters.js"></script>
-    <script src="../js/slideshow.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/tab.js"></script>
 
 </body>
 </html>

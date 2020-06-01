@@ -23,6 +23,9 @@ footer{
 
 }
 
+button{
+  outline-style: none;
+}
 
 /*menu*/
 .menu:hover .menu__link:not(:hover){

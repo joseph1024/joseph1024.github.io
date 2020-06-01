@@ -170,7 +170,7 @@
         </div>
 
         <div class="wrapper">
-            <div class="container">
+            <div class="container2">
                 <form action="loader.html">
                      <h1>
                         <i class="fas fa-shipping-fast"></i>
@@ -210,10 +210,28 @@
                     <input type="month" name="" value="" required><br><br>
                     <font color="red">*</font>&nbsp;信用卡背面末三碼&emsp;:&emsp;
                     <input type="text" name="" style="width: 30px;" minlength="3" onkeyup="value=value.replace(/[^\d]/g,'') " oninput="if(value.length>3)
-                    value=value.slice(0,3)" placeholder="" required><br><br>
-                    <button  tyle="submit" class="clearbtn2">結帳</button>
+                    value=value.slice(0,3)" placeholder="" required><br><br>     
+                    <button type="submit" style="border:none;outline:none;"> 
+                    <div class="container" >
+                        <div class="left-side">
+                            <div class="card">
+                                <div class="card-line"></div>
+                                <div class="buttons" ></div>
+                            </div>
+                            <div class="post">
+                                <div class="post-line"></div>
+                                <div class="screen">
+                                <div class="dollar">$</div>
+                                </div>
+                            <div class="numbers"></div>
+                            <div class="numbers-line2"></div>
+                            </div>
+                            <p class="check">結帳</p>
+                        </div>
+                    </div>
+                    </button>
                 </form>
-                <a href="menu.html"><button class="clearbtn">繼續購買</button></a>
+                <a href="menu.html"><button class="clearbtn" style="margin-top: -40px;">繼續購買</button></a>
             </div>   
         </div>
     </main>

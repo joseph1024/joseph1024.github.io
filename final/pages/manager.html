@@ -128,7 +128,7 @@
     
     <!--main start-->
     <main>
-    <div class="tab">
+    <div class="tab2">
         <button class="tablinks" onclick="openCity(event, 'member')" id="defaultOpen">會員管理</button>
         <button class="tablinks" onclick="openCity(event, 'product')">商品管理</button>
         <button class="tablinks" onclick="openCity(event, 'order')">出貨紀錄</button>
@@ -150,24 +150,28 @@
                 </td>
             </tr>
         </table>
-
-        <div class="member" >
-            <div class="custom-select" style="">
-                <select >
-                    <option value="0">會員管理</option>
-                    <option value="1">test</option>
-                    <option value="2">test2</option>
-                    <option value="3">test3</option>
-                </select>
+        
+        <!--member form start-->
+        <form action="loader.html">
+            <div class="member" >
+                <div class="custom-select" style="">
+                    <select >
+                        <option value="0">會員管理</option>
+                        <option value="1">test</option>
+                        <option value="2">test2</option>
+                        <option value="3">test3</option>
+                    </select>
+                </div>
+                <button type="submit" class="memberbtn">管理會員</button>
+                <div class="memberin">
+                    會員帳號: test<br><br>
+                    會員密碼: 123<br><br>
+                    累計消費: 2000<br><br>
+                    紅利點數: 2000
+                </div>
             </div>
-            <button class="memberbtn">管理會員</button>
-            <div class="memberin">
-                會員帳號:test<br><br>
-                會員密碼:123<br><br>
-                累計消費:2000<br><br>
-                紅利點數:2000
-            </div>
-        </div>
+        </form>
+        <!--member form end-->
     </div>
 
     <div id="product" class="tabcontent">
@@ -186,6 +190,7 @@
         </table>
 
         <div class="list">
+            <!--manager form start-->
             <form action="loader.html">
                 <table  class="carttable">
                     <thead>
@@ -233,11 +238,12 @@
                     </tbody>
                 </table>
             </form>
+            <!--manager form end-->
         </div>
     </div>
 
     <div id="order" class="tabcontent">
-    <table id="order" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+    <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
@@ -278,7 +284,7 @@
     </div>
 
     <div id="gift" class="tabcontent">
-       <table id="gift" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+       <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
@@ -320,7 +326,7 @@
     </div>
 
     <div id="board" class="tabcontent">
-        <table id="board" class="hrtable2" style="margin-top: 100px;margin-left:210px;">
+        <table  class="hrtable2" style="margin-top: 100px;margin-left:210px;">
             <tr>
                 <td>
                     <hr class="hrline"> 
