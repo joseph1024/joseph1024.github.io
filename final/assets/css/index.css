@@ -1,0 +1,112 @@
+/*slide show*/
+* {box-sizing: border-box;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 50px;
+  margin-left: 550px;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+/*best seller*/
+
+.best{
+  width: 60%;
+  margin-top:30px;
+}
+
+.bestimg{
+  width: 30%;
+  height: 300px;
+  margin-left:20px;
+  margin-top:20px;
+}
+
+
+
+.shopbtn {    
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  transition-duration: 0.4s;
+  cursor: pointer; 
+}
+
+.spbtn {
+  background-color: #FFCC71; 
+  color: #A16F3A;
+  font-family: monospace; 
+  border: 2px solid #A16F3A;
+  font-weight: bold;
+}
+
+.spbtn:hover {
+  background-color: #A16F3A;
+  color: white;
+  font-family: monospace; 
+}

@@ -1,0 +1,227 @@
+.carttable{
+	border-collapse: collapse;
+	background-color: #DDA258;
+	font-size: 24px;
+	text-align: center;
+	width: 100%;
+}
+
+.carttable thead{
+	font-size: 20px;
+	font-family:"Montserrat", "Microsoft Yahei";
+	border-bottom: 1px solid black;
+}
+
+.carttable tbody,{
+	font-size: 16px;
+	font-family:"Montserrat", "Microsoft Yahei";
+}
+
+
+.carttable tbody tr:hover {
+	background-color:#EDC58D;
+}
+
+.carttable tbody tr:hover .memberbtn{
+	background-color:#EDC58D;
+}
+
+
+.text{
+	font-size: 24px;
+	background-color: #EDC58D;
+	margin-left: 40px;
+
+}
+
+.list{
+	width: 100%;
+	margin-left: 10px;
+	overflow-y:scroll; height: 550px;
+	float: left;
+	margin-top: -500px;
+	margin-bottom: 200px;	
+}
+
+.memberbtn{
+	background-color:#DDA258;
+	font-size:28px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+	font-family: "Montserrat", "Microsoft Yahei";
+	border:none;
+}
+
+
+.member{
+	width: 76%;
+	margin-left: 100px;
+	height: 350px;
+}
+
+/*tab*/
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab2 {
+  float: left;
+  border: 1px solid #ccc;
+  background-color:#DDA258;
+  width: 11.5%;
+  padding-top: 30px;
+  padding-left: 35px;
+  font-size: 28px;
+  font-family: Montserrat, Microsoft Yahei;
+  margin-top: 150px;
+}
+
+/* Style the buttons inside the tab */
+.tab2 button {
+  display: block;
+  background-color:#DDA258;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 24px;
+  font-family: Montserrat, Microsoft Yahei;
+}
+
+/* Change background color of buttons on hover */
+.tab2 button:hover {
+  background-color: #EDC58D;
+}
+
+/* Create an active/current "tab button" class */
+.tab2 button.active {
+  background-color: #EDC58D;
+}
+
+/* Style the tab content */
+.tabcontent {
+  padding: 0px 12px;
+  border: none;
+  width: 76%;
+  border-left: none;
+  background-color:#FFCC71;
+  margin-left: 200px;
+  margin-bottom: 675px;
+
+}
+
+.map{
+	float: left; 
+	background-color:#DDA258;
+	height: 400px;width: 200px;
+	position: fixed;
+	top:240px;
+	padding-top: 30px;
+	padding-left: 35px;
+	font-size: 28px;
+    font-family: Montserrat, Microsoft Yahei;
+}
+
+.board{
+	width: 40%;
+	margin-left: 450px;
+	overflow-y:scroll; height: 600px;
+
+}
+
+.boardtxt{
+	height: auto;
+	background-color: #EDC58D;
+	border: 3px solid #DDA258;
+	font-size: 24px;
+	font-family: "Montserrat", "Microsoft Yahei";
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.memberin{
+	width: 60%;
+	margin-left: 300px;
+	height: 300px;
+	background-color: #EDC58D;
+	float:left;
+	margin-top:80px;
+	margin-bottom:80px;
+	border: 3px solid #DDA258;
+	font-size: 24px;
+	font-family: "Montserrat", "Microsoft Yahei";
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  font-size: 28px;
+  width:200px;
+  float: left;
+  font-family: "Montserrat", "Microsoft Yahei";
+  margin-left: 450px;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: #DDA258;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: #DDA258;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: #EDC58D;
+}

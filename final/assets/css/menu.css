@@ -1,0 +1,14 @@
+
+.all{
+	width: 85%;
+	overflow: hidden;
+}
+
+
+.all img {
+    cursor: pointer;
+    transition: all 0.4s;
+}
+.all img:hover {
+    transform: scale(1.1);
+
