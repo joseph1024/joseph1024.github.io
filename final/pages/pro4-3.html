@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <title>Socks</title>
     <style>
-    @import "../css/title.css";
-    @import "../css/product2.css";
+    @import "../assets/css/title.css";
+    @import "../assets/css/product2.css";
     </style>
 </head>
 <body>
     <!--hearder start -->
     <header>
-    <img src="../img/logo.png" width="10%" style="float: left;">
+    <img src="../assets/img/logo.png" width="10%" style="float: left;">
         <div class="page">
           <nav class="menu">
             <ul class="menu__list">
-                <li class="menu__group"><a href="index.html" class="menu__link">HOME</a></li>
+                <li class="menu__group"><a href="../index.html" class="menu__link">HOME</a></li>
                     <div class="dropdown">
                         <li class="menu__group"><a href="menu.html" class="menu__link" style="padding-left: 155px;padding-right: 155px;">MENU</a>
                             <div class="dropdown-content">
@@ -88,7 +88,7 @@
                             </div>
                             <div class="hr"></div>
                             <div class="foot-lnk">
-                                <a href="#forgot">Forgot Password?</a>
+                                <a href="forgot.html">Forgot Password?</a>
                             </div>
                         </div>
                     </form>
@@ -129,10 +129,10 @@
     <!--main start-->
     <main>
         <div class="pro">
-            <img src="../img/pro4-3.jpg">
+            <img src="../assets/img/pro4-3.jpg">
             <div class="intr">
-                <p style=" font-size: 36px;">產品名稱</p>
-                <p style="color:red;font-size: 24px;">NT$100</p>
+                <p style=" font-size: 36px;">FILA中筒襪(白)</p>
+                <p style="color:red;font-size: 24px;">NT$480</p>
                 <p style="font-size: 24px;">庫存:100</p>
                 <!--buy form-->
                 <form action="loader.html">
@@ -146,11 +146,12 @@
         </div><hr class="hrline" width="70%">
         
         <div class="content">
-            <img src="../img/user.jpg">
-            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
+            <div class="contentimg">
+                <img src="../assets/img/user.jpg" >
+            </div>
             <!--content form-->
             <form action="loader.html">
-            <div class="rate">
+            <div class="rate" style="margin-top: 30px;">
                 <input type="radio" id="star5" name="rate" value="5" CHECKED  />
                 <label for="star5" title="text">5 stars</label>
                 <input type="radio" id="star4" name="rate" value="4" />
@@ -162,6 +163,9 @@
                 <input type="radio" id="star1" name="rate" value="1" />
                 <label for="star1" title="text">1 star</label>
             </div>
+                <div class="contentname" style="margin-top: 80px">
+                    user
+                </div> 
                 <textarea name="memo" cols="20" rows="5" wrap="hard" maxlength="100"   required></textarea>
                 <div class="btn-group3" >
                     <button type="submit" style="font-size: 24px;">送出留言</button>
@@ -170,45 +174,55 @@
             <!--content form end-->
         </div>
 
-        <div class="content" style="overflow-y:scroll; height: 550px;">
-            <img src="../img/user.jpg">
-            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1"  />
-                <label for="star1" title="text">1 star</label>
-            </div>
+        <div class="content" style="overflow-y:scroll; height: 630px;">
+            <div style="height:450px;">
+                <div class="contentimg">
+                    <img src="../assets/img/user.jpg" >
+                </div>
+                <div class="rate" style="margin-top: 30px;" >
+                    <input type="radio" id="star5" CHECKED hidden/>
+                    <label for='star5' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star4" hidden/>
+                    <label for='star4' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star3" hidden/>
+                    <label for='star3' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star2" hidden/>
+                    <label for='star2' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star1" hidden/>
+                    <label for='star1' class='disabled'><i class='fas fa-star'></i></label>
+                </div>
+                <div class="contentname">
+                    user<br><br>            
+                    2020-05-31 00:12:45
+                </div>                           
                 <div class="board">
                     good
                 </div> 
-            <img src="../img/user.jpg">
-            <p style="float: left;font-size: 26px;margin-top: 60px;">user</p>
-            <!--content form-->
-            <form>
-            <div class="rate">
-                <input type="radio" id="star5" name="rate" value="5" CHECKED/>
-                <label for="star5" title="text">5 stars</label>
-                <input type="radio" id="star4" name="rate" value="4" />
-                <label for="star4" title="text">4 stars</label>
-                <input type="radio" id="star3" name="rate" value="3" />
-                <label for="star3" title="text">3 stars</label>
-                <input type="radio" id="star2" name="rate" value="2" />
-                <label for="star2" title="text">2 stars</label>
-                <input type="radio" id="star1" name="rate" value="1" />
-                <label for="star1" title="text">1 star</label>
             </div>
-                 <div class="board">
+            <div style="height:450px;">
+                <div class="contentimg">
+                    <img src="../assets/img/user.jpg" >
+                </div>
+                <div class="rate" style="margin-top: 30px;" >
+                    <input type="radio" id="star5" CHECKED hidden/>
+                    <label for='star5' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star4" hidden/>
+                    <label for='star4' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star3" hidden/>
+                    <label for='star3' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star2" hidden/>
+                    <label for='star2' class='disabled'><i class='fas fa-star'></i></label>
+                    <input type="radio" id="star1" hidden/>
+                    <label for='star1' class='disabled'><i class='fas fa-star'></i></label>
+                </div>
+                <div class="contentname">
+                    user<br><br>            
+                    2020-05-31 00:12:45
+                </div>                           
+                <div class="board">
                     nice
                 </div> 
-            </form>
-
+            </div>
         </div>
     </main>
     <!--main end-->
@@ -233,18 +247,18 @@
             <table  width="60%" style="margin-left: 100px;" >
                 <tr>
                     <td>
-                        <img src="../img/k.jpg" width="60%">
+                        <img src="../assets/img/h.jpg">
                     </td>
                     <td>
-                        <img src="../img/k.jpg" width="60%">
+                        <img src="../assets/img/k.jpg">
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="../img/k.jpg" width="60%">
+                        <img src="../assets/img/p.jpg">
                     </td>
                     <td>
-                        <img src="../img/k.jpg" width="60%">
+                        <img src="../assets/img/y.jpg">
                     </td>
                 </tr>
             </table>
@@ -278,9 +292,9 @@
 
     <!--java script-->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="../js/sign.js" ></script>
-    <script src="../js/letters.js"></script>
-    <script src="../js/select.js"></script>
+    <script src="../assets/js/sign.js" ></script>
+    <script src="../assets/js/letters.js"></script>
+    <script src="../assets/js/select.js"></script>
 
 </body>
 </html>
